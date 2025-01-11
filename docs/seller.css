@@ -15,7 +15,6 @@ body {
     box-sizing: border-box; /* Учитывает границы */
     overflow: hidden;
 }
-<<<<<<< HEAD
 .sidebar1 {
     border-right: 3px solid black;
     display: flex;
@@ -30,9 +29,6 @@ body {
     background-position: center; /* Центрирует изображение */
     height: 100vh; /* Устанавливает высоту контейнера равной высоте экрана */
 }
-=======
->>>>>>> e214277709e410622afb7148422efd0b4d1978bf
-
 .sidebar {
     border-right: 3px solid black;
     display: flex;
@@ -199,7 +195,6 @@ body {
     color: black;
     margin-bottom: 12px;
 }
-<<<<<<< HEAD
 .buttonsohr button {
     background-color: black; /* Цвет фона по умолчанию */
     color: white; /* Цвет текста по умолчанию */
@@ -211,5 +206,3 @@ body {
     background-color: white; /* Цвет фона при наведении */
     color: red; /* Цвет текста при наведении */
 }
-=======
->>>>>>> e214277709e410622afb7148422efd0b4d1978bf
