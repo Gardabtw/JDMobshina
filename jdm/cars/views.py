@@ -44,3 +44,18 @@ def car_detail(request, car_id):
         raise Http404("Машина не найдена")
     return render(request, 'cars/car_detail.html', {'car': car})
 
+
+from django.http import JsonResponse
+from .forms import CarForm
+
+def add_car(request):
+    if request.method == 'POST':
+        form = CarForm(request.POST, request.FILES)  # Обрабатываем файлы (например, изображение)
+        if form.is_valid():
+            car = form.save()  # Сохраняем объект в базе
+            return JsonResponse({'success': True, 'message': 'Машина добавлена успешно!'})
+        else:
+            return JsonResponse({'success': False, 'message': 'Ошибка валидации данных.'})
+    else:
+        form = CarForm()
+    return render(request, 'seller.html', {'form': form})
